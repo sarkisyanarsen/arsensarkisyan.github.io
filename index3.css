@@ -1,0 +1,378 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    /* background: linear-gradient(66deg, #e38010, #1535bf) */
+    overflow-x: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(11, 27, 143, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav {
+    z-index: 2;
+    min-width: 28%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    border: 1px solid blueviolet;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.nav>a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#3945f0, #f700cd);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Borel', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+.parent {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border: 1px solid blueviolet;
+}
+
+.image {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+}
+
+.image-photo:hover {
+    transform: scale(1.1);
+}
+
+.image-photo {
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.text {
+    width: 40%;
+    height: 450px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    color: wheat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+    background: -webkit-linear-gradient(#3945f0, #f700cd);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Borel', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+.about-txt {
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+.projects {
+    width: 100%;
+    min-height: 500px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border: 1px solid blueviolet;
+}
+
+.skills {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+}
+
+.img {
+    width: 20px;
+}
+
+.courses {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 40px;
+}
+
+.logo-txt {
+    font-size: 15px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-txt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background: -webkit-linear-gradient(#3945f0, #f700cd);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Borel', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+.skill {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: #3945F0;
+    /* background: linear-gradient(to top, #3945F0 0%, #F700CD 100%); */
+    -webkit-background-clip: text;
+    font-weight: bold;
+    /* -webkit-text-fill-color: transparent; */
+    font-family: 'Borel', cursive;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+.htmll,
+.csss,
+.jss,
+.pyy {
+    border: 1px solid blueviolet;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.t,
+.c,
+.j,
+.p {
+    position: absolute;
+    z-index: -1;
+}
+
+.wd {
+    height: 30px;
+    left: 0%;
+    /* border-radius: 20px; */
+    background-color: rgba(137, 43, 226, 0.493);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+
+.projects-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-one {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* background: rgb(8,14,162); */
+    background: linear-gradient(to top, #3945F0 0%, #F700CD 100%);
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Borel', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+.projects-div>a {
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lambda {
+    background: linear-gradient(to top, #3945F0 0%, #F700CD 100%);
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Borel', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+#lambda {
+    background-image: url(pictures/p6.ab08b932.png);
+    border-radius: 20px;
+    transition: .5s;
+
+}
+
+#lambda:hover,
+#dashboard:hover,
+#todo:hover,
+#keyboard:hover,
+#switch:hover,
+#supermarket:hover,
+#polo:hover,
+#saper:hover {
+    transform: scale(1.1);
+}
+
+#dashboard {
+    background-image: url(pictures/Скриншот\ 30-01-2024\ 220554.jpg);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#todo {
+    background-image: url(pictures/p3.1d37859f.jpg);
+    background-size: 267px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#keyboard {
+    background-image: url(pictures/keyboard.jpg);
+    border-radius: 20px;
+    background-size: 267px;
+    transition: .5s;
+    background-repeat: no-repeat;
+}
+
+#switch {
+    background-image: url(pictures/switch.jpg);
+    border-radius: 20px;
+    background-size: 200px;
+    transition: .5s;
+    background-repeat: no-repeat;
+}
+
+#supermarket {
+    background-image: url(pictures/supermarket.jpg);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    transition: .5s;
+}
+
+#polo {
+    background-image: url(pictures/polo.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 267px;
+    transition: .5s;
+}
+
+#saper {
+    background-image: url(pictures/saper.png);
+    border-radius: 20px;
+    background-size: 300px;
+    background-position: 53%;
+    transition: .5s;
+    background-repeat: no-repeat;
+}
+
+.burger-menu-parent {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .cont {
+        justify-content: start;
+    }
+
+    .burger-menu-parent {
+        width: 100px;
+        border: 1px solid blueviolet;
+        border-radius: 50px;
+        display: none;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 3;
+        left: 0;
+        top: 0;
+    }
+}
