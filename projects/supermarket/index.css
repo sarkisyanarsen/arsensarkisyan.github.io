@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    background-color: #1aa33d;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.leftt {
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.valuta, .language {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language {
+    width: 80px!important;
+}
+
+.valuta:hover, .language:hover {
+    background-color: #026331;
+}
+
+.money {
+    font-size: 15px;
+}
+
+.link>a>i {
+    color: white;
+    font-size: 20px;
+}
+
+.link {
+    width: 300px;
+    justify-content: center;
+}
+
+.link>a {
+    width: 300px;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.rightt {
+    width: 100%;
+    display: flex;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.login:hover {
+    background-color: #026331;
+    cursor: pointer;
+}
+
+.login {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.burger {
+    display: block;
+}
+
+/* контейнер меню */
+.menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 220px;
+    z-index: 3;
+    left: -100%;
+    width: 220px;
+    height: 70%;
+    margin: 0;
+    padding: 25px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #E8E9E9;
+    /* box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); */
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 15px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: block; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    width: 23px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}

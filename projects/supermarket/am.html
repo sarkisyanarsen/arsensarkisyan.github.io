@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    p {
+      margin: 0 !important;
+    }
+
+
+
+    .img {
+      width: 80%;
+      height: 150px;
+      object-fit: contain;
+    }
+
+    .parent {
+      width: 200px;
+      height: 300px;
+      border: 1px solid grey;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .center {
+      width: 50px;
+    }
+
+    .row>i {
+      font-size: 50px;
+    }
+
+    .row>p {
+      position: absolute;
+      left: 60px;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    #select,
+    #select1 {
+      background: rgba(0, 0, 0, 0);
+      border: none;
+      color: white;
+      outline: none;
+    }
+
+    #select>option,
+    #select1>option {
+      background: white;
+      color: black;
+      font-size: 12px;
+    }
+
+    .head {
+      width: 100%;
+      padding-top: 90px;
+      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      height: 120px;
+      gap: 20px;
+    }
+
+    #reload {
+      color: rgb(36, 187, 36);
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    #search {
+      border: none;
+      border-bottom: 1px solid green;
+      width: 450px;
+      outline: none;
+    }
+
+    #search:hover {
+      border-bottom: 2px solid green;
+    }
+
+    #search-icon {
+      font-size: 25px;
+      color: green;
+      margin-right: 20px;
+    }
+
+    .num {
+      margin-left: 50px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .num-txt {
+      background-color: #F5DB00;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      /* width: 230px; */
+      font-size: 14px;
+    }
+
+    .number {
+      font-size: 25px;
+      color: red;
+    }
+
+    #inf {
+      font-size: 15px;
+      padding-left: 10px;
+    }
+
+    .menu-parent {
+      width: 100%;
+      height: 40px;
+      padding-top: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu,
+    .products,
+    .house,
+    .new-year {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      background-color: #E8E9E9;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .menu:hover,
+    .products:hover,
+    .house:hover,
+    .new-year:hover {
+      background-color: #04a351;
+      color: white;
+    }
+
+    .carousel-parent {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel {
+      width: 650px !important;
+    }
+
+    .image>img {
+      height: 427px;
+      margin-left: 25px;
+    }
+
+    #heart {
+      font-size: 25px;
+      color: white;
+    }
+
+    #cart {
+      font-size: 25px;
+    }
+
+    #totall {
+      position: absolute;
+      width: 30px;
+      top: 0px;
+      left: 61%;
+      border-radius: 10px;
+      background-color: rgb(201, 138, 1);
+      font-size: 13px;
+    }
+
+    .heart,
+    .cart-par {
+      width: 35px;
+    }
+
+    .heartt,
+    .cartt {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+    }
+
+    .centerr {
+      width: 100%;
+      height: 40px;
+      gap: 40px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo2 {
+      width: 35px;
+    }
+
+    #russian {
+      width: 20px;
+      margin-left: 5px;
+    }
+
+    #usa {
+      width: 20px;
+      margin-left: 5px;
+    }
+
+    #armenia {
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+    <nav class="header">
+        <div class="leftt">
+          <div class="valuta">
+    
+            <span>Արժույթ:</span>&nbsp;<select name="" id="select">
+              <option value="amd">
+                <a href="index.html">
+                  AMD
+                </a>
+              </option>
+              <option value="usd">
+                <a href="usd.html">
+                  USD
+                </a>
+              </option>
+              <option value="eur">
+                <a href="eur.html">
+                  EUR
+                </a>
+              </option>
+              <option value="rub">
+                <a href="rus.html">
+                  RUS
+                </a>
+              </option>
+            </select>
+          </div>
+          <div class="language">
+            <a href="am.html">
+              <img src="pictures/armenia.png" id="armenia" alt="">
+            </a>
+            <a href="index.html">
+              <img src="pictures/russia.png" id="russian" alt="">
+            </a>
+            <a href="english.html">
+              <img src="pictures/united-states.png" id="usa" alt="">
+            </a>
+          </div>
+          <div class="link">
+            <a href="">
+              <i class="fas fa-mobile-alt"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-apple"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-play"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-viber"></i>
+            </a>
+          </div>
+        </div>
+        <div class="centerr">
+          <a href="index.html">
+            <img src="pictures/logo.png" class="logo2" alt="">
+          </a>
+          <div class="heart">
+            <button class="heartt" id="btn-heart">
+              <i class="far fa-heart" id="heart"></i>
+            </button>
+          </div>
+          <div class="cart-par">
+            <button class="cartt">
+              <i class="fas fa-shopping-cart" id="cart"></i>
+              <p id="totall" class="total-style"></p>
+            </button>
+          </div>
+        </div>
+        <div class="rightt">
+          <div class="login">
+            <a href="login.html" style="text-decoration: none; color: white;">
+              <i class="far fa-user"></i>&nbsp;Մուտք և գրանցում
+          </div>
+          </a>
+        </div>
+      </nav>
+      <div class="head">
+        <a href="index.html" id="reload">
+          <img src="pictures/logo.png" class="logo" alt=""> <span class="txt">SuperMarket</span>
+        </a>
+        <span>
+          <i class="fas fa-search" id="search-icon"></i><input type="search" name="" id="search"
+            placeholder="Մենք կգտնենք և կառաքենք ցանկացած ապրանք">
+        </span>
+        <div class="num">
+          <div class="num-txt"
+            title="Մինչև 10.000 դրամ պատվերների դեպքում առաքումը 500 դրամ։&#013 10.000 դրամից բարձր պատվերի դեպքում առաքումն անվճար է։">
+            Անվճար առաքում <i class="fas fa-info-circle" id="inf"></i>
+          </div>
+          <div class="number">
+            011 555 555
+          </div>
+        </div>
+        <!-- <div class="heart">
+          <button class="heartt">
+            <i class="far fa-heart" id="heart"></i>
+          </button>
+          <button class="cartt">
+            <i class="fas fa-shopping-cart" id="cart"></i>
+            <p id="totall"></p>
+          </button>
+        </div> -->
+      </div>
+      <div class="menu-parent">
+        <div class="menu">
+          <div class="burger">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Քաղցրավենիք</a></li>
+              <li><a class="menu__item" href="#">Բանջարեղեն և մրգեր</a></li>
+              <li><a class="menu__item" href="#">Հացաբուլկեղենի արտադրանք</a></li>
+              <li><a class="menu__item" href="#">Ըմպելիքներ</a></li>
+              <li><a class="menu__item" href="#">Ալկոհոլ</a></li>
+              <li><a class="menu__item" href="#">Էլեկտրոնիկա</a></li>
+              <li><a class="menu__item" href="#">Հիգիենա</a></li>
+              <li><a class="menu__item" href="#">Գրասենյակ</a></li>
+              <li><a class="menu__item" href="#">Սպորտային իրեր</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products">
+            ԱՊՐԱՆՔՆԵՐ
+        </div>
+        <div class="house">
+            ՊԱՀԱՆՋՈՒՄ
+        </div>
+        <div class="new-year">
+            ՆՈՐ ՏԱՐԻ
+        </div>
+      </div>
+      <div class="carousel-parent">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pictures/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselExampleSlidesOnly" style="width: 315px!important; margin-left: 30px;" class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pictures/4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/3.png" class="d-block w-100" alt="...">
+            </div>
+            <!-- <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="contaner">
+    
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/8628f0fd9a.js" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
