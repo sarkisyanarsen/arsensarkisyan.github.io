@@ -1,0 +1,388 @@
+.nav {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pink {
+    width: 14px;
+    height: 40px;
+    border-radius: 10%;
+    background: rgb(108, 50, 95);
+    background: linear-gradient(13deg, rgba(108, 50, 95, 1) 0%, rgba(212, 35, 110, 1) 40%);
+}
+
+.blue {
+    width: 14px;
+    height: 55px;
+    border-radius: 10%;
+    margin-left: 5px;
+    background: rgb(108, 50, 95);
+    background: linear-gradient(3deg, rgba(108, 50, 95, 1) 0%, rgba(35, 187, 212, 1) 48%);
+}
+
+.orange {
+    width: 14px;
+    height: 50px;
+    border-radius: 10%;
+    margin-left: 5px;
+    background: rgb(108, 50, 95);
+    background: linear-gradient(3deg, rgba(108, 50, 95, 1) 0%, rgba(212, 136, 35, 1) 48%);
+}
+
+.polo {
+    color: rgb(82, 81, 81);
+    font-size: 35px;
+}
+
+.three {
+    color: rgb(243, 98, 123);
+    font-size: 35px;
+}
+
+.six {
+    color: rgb(86, 86, 236);
+    font-size: 35px;
+}
+
+.zero {
+    color: orange;
+    font-size: 35px;
+}
+
+.kind {
+    color: rgb(112, 112, 112);
+    font-size: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tlogo {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+}
+
+.ki {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.nl {
+    height: 40px;
+    border-left: 1px solid grey;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.home {
+    font-size: 15px;
+}
+
+.hom {
+    font-size: 10px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+.b {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(49, 49, 49);
+}
+
+.perf {
+    color: grey;
+    font-size: 10px;
+}
+
+.l {
+    margin-top: 10px;
+    border-radius: 2%;
+}
+
+.lorem {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 27px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.la {
+    width: 350px;
+    margin-top: 10px;
+}
+
+.sed {
+    width: 350px;
+}
+
+button {
+    display: flex;
+    height: 40px;
+}
+
+.learn {
+    color: blue;
+}
+
+button {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.line {
+    border-bottom: 1px solid grey;
+    width: 85%;
+}
+
+.lparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect {
+    display: flex;
+    flex-direction: column;
+}
+
+.par {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.lin {
+    border-bottom: 1px solid grey;
+    width: 350px;
+    margin-top: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 350px;
+}
+
+.social {
+    font-size: 20px;
+}
+
+.text {
+    width: 350px;
+}
+
+.bt {
+    background-color: rgb(47, 47, 238);
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.paren {
+    width: 350px;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    width: 350px;
+    height: 30px;
+}
+
+.s {
+    color: white;
+}
+
+.r {
+    color: white;
+}
+
+.perfect {
+    font-size: 20px;
+    color: blue;
+
+}
+
+.pparent {
+    width: 350px;
+    margin: 0 20px;
+}
+
+.secEnd {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: rgb(56, 55, 55);
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    flex-wrap: wrap;
+}
+
+.dov {
+    display: flex;
+    width: 350px;
+    align-items: center;
+}
+
+.dIv {
+    color: grey;
+    font-size: 15px;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.secEnd>div {
+    width: 350px;
+}
+
+.ema {
+    width: 350px;
+    height: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .l {
+        width: 550px;
+        height: 250px;
+        margin-top: 70px;
+    }
+
+    section>.layer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .l {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .l {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .l {
+        width: 250px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .b {
+        width: 290px;
+        height: 157px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .parent {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .la {
+        width: 250px;
+    }
+
+    .sed {
+        width: 250px;
+    }
+
+    button {
+        width: 250px;
+    }
+
+    .text {
+        width: 250px;
+    }
+
+    .lin {
+        width: 250px;
+    }
+
+    .secEnd>div {
+        width: auto;
+    }
+
+    .in {
+        width: 250px;
+    }
+
+    textarea {
+        width: 250px;
+    }
+
+    .dov {
+        width: 250px;
+    }
+
+    .ema {
+        width: 250px;
+    }
+
+    .line {
+        width: 250px;
+    }
+
+    footer {
+        width: 250px;
+    }
+
+    .pparent {
+        width: auto;
+    }
+}

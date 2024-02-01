@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .btn1 {
+        display: block;
+    }
+    
+    .ghost {
+        display: none;
+    }
+    
+    .information {
+        font-size: 55px;
+        color: rgb(7, 7, 238)
+    }
+
+    #cursor {
+        cursor: pointer;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.459);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: rgba(13, 79, 223, 0.363);
+        padding: 20px;
+        bottom: 1px solid #888;
+        width: 25%;
+        height: 25%;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        /* font-weight: bold; */
+        cursor: pointer;
+    }
+    
+    #myBtn {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+    
+    .modal-animation {
+        transition: 1s;
+        transform: scale(1.1);
+    }
+
+    .results-parent {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .results {
+        width: 200px;
+        background-color: aqua;
+        border: none;
+        cursor: pointer;
+    }
+
+    input {
+    margin-top: 15px;
+    }
+
+    button {
+    width: 70px;
+    margin-top: 15px;
+    }
+
+    .button-parent {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+
+    }
+
+    .rand, .new {
+    width: 150px;
+    color: white;
+    background-color: black;
+    }
+
+    .text {
+    color: rgb(0, 217, 255);
+    width: 300px;
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- game -->
+    <button id="myBtn"><i class="fas fa-info information" id="cursor" title="Information the game."></i></button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="text">Привет! Это игра, угадай число! Все что тебе нужно это нажать на кнопку, а игра задумает число, так же она будет выводить, меньше или больше. Если меньше, то значит ваше число меньше, чем задуманное, а если больше то будет на оборот.</p>
+            <!-- <div class="results-parent">
+                <button class="results">Посмотреть результаты:</button>
+            </div> -->
+        </div>
+    </div>
+    <input type="text" id="checking">
+    <button class="rand" onclick="check()">Проверить число.</button>
+    <p id="text"></p>
+    <p id="pp">Предыдущие число: </p>
+    <button class="ghost" id="num" onclick="window.location.reload()">Загадать число, ещё раз!</button>
+    
+    
+    
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8628f0fd9a.js" crossorigin="anonymous"></script>
+</body>
+</html>

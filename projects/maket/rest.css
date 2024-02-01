@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+/* задний фон */
+.bg {
+    background-image: url(Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+}
+.back {
+    background-image: url(bg-talerka.png);
+    min-height: 700px;
+    width: 100%;   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
+.bgk {
+    background-image: url(bgg.png);
+    min-height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menbk {
+    background-image: url(menuBg.jpg);
+    min-height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menbk>div{
+    margin: 0 35px;
+    width: 400px;
+}
+.guest {
+    background-image: url(badrjan.jpg);
+    height: 760px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    background-image: url(bg-talerka.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 540px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+/* шапка/ навигация */
+nav {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    min-height: 150px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+header>img{
+    width: 200px;
+}
+
+.icons>i{
+    font-size: 25px;
+    margin: 0 15px;    
+    color: #CC9900;
+}
+
+header>nav>a  {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;    
+}
+.social {
+    margin-top: 35px;
+    margin-left: 55px;
+    width: 100%;
+    height: 30px;
+}
+.coren {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    justify-content: space-evenly;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gparent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.paren {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.parentt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menutex {
+    /* margin-left: 150px; */
+}
+.tzparent {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 15px;
+}
+.tzparent>div{
+    margin: 20px 0;
+}
+.parentt>div{
+    margin: 15px 0;
+}
+.tparent {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+}
+.par {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fparent>div{
+    margin: 15px 0;
+}
+.sparent {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+}
+.aparent {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+}
+.stparent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hparent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 400px;
+}
+.fparent {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 15px;
+    /* margin-left: 150px; */
+}
+.hal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+/* text */
+.food {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+    color: white;
+    flex-wrap: wrap;   
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.rightfood {
+    font-size: 55px;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    max-width: 600px;
+}
+.the {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.dis {
+    width: 500px;
+}
+.divv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rt {
+    display: flex;
+    text-align: center;
+
+}
+.tex {
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.fine {
+    font-size: 45px;
+    color: white;
+}
+.fini {
+    font-size: 20px;
+    color: white;
+    width: 400px;
+    margin-left: 50px;
+}
+.appet {
+    display: flex;
+    font-size: 60px;
+    color: #CC9900;
+    justify-content: space-between;
+}
+.start {
+    display: flex;
+    font-size: 60px;
+    color: #CC9900;
+}
+.tzat {
+    font-size: 25px;
+    color:#CC9900;
+}
+.mount {
+    font-size: 25px;
+    color: #CC9900;
+}
+.ref, .pureed, .pur {
+    font-size: 15px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+.aub {
+    font-size: 25px;
+    color:#CC9900;
+}
+.mounte {
+    font-size: 25px;
+    color: #CC9900;
+}
+.pureed {
+}
+.aubb {
+    font-size: 25px;
+    color:#CC9900;
+}
+.moun {
+    font-size: 25px;
+    color: #CC9900;
+}
+.pur {
+}
+.starmn {
+    font-size: 25px;
+    color:#CC9900;
+}
+.starmo {
+    font-size: 25px;
+    color: #CC9900;
+}
+.starte {
+}
+.starmne {
+    font-size: 25px;
+    color:#CC9900;
+}
+.starmoe {
+    font-size: 25px;
+    color: #CC9900;
+}
+.startee {
+}
+.salad {
+    font-size: 60px;
+    color:#CC9900;
+}
+.sald {
+    font-size: 25px;
+    color: #CC9900;
+}
+.salmo {
+    font-size: 25px;
+    color: #CC9900;
+}
+.salt {
+    position: absolute;
+}
+/* greek */
+.greekb {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.greek {
+    font-size: 25px;
+    color:#CC9900;
+}
+.grekt {
+}
+.grekm {
+    font-size: 25px;
+    color: #CC9900;
+}
+.special {
+    font-size: 20px;
+    color: white;
+    background-color: #CC9900;
+    text-align: center;
+    width: 100px;
+    margin-left: 302px;
+    opacity: 0.88;
+}
+/* guest */
+.revi {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.gtext {
+    color: white;
+    font-size: 36px;
+    /* margin-left: 130px; */
+    font-family: "undefined";
+}
+.gim {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 25px;
+    /* margin-left: 95px; */
+    /* margin-top: 35px; */
+}
+.gte {
+    font-size: 20px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    /* margin-left: 35px; */
+    /* margin-top: 30px; */
+}
+.gp {
+    color: white;
+    font-size: 10px;
+    margin-left: 20px;
+}
+.cent {
+    display: flex;
+    justify-content: center;
+}
+/* gusto salad */
+.gs {
+   font-size: 25px;
+   color: #CC9900;
+
+}
+.gl {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.gm {
+    font-size: 25px;
+    color: #CC9900;
+}
+.gt {
+}
+/* right the food */
+.images {
+    height: 500px;
+    margin: 10px 25px;
+}
+.divid {
+    width: 300px;
+    height: 30px;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.jparent {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.jparen {
+    display: flex;
+    flex-direction: column;
+}
+.dparent {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.justfood {
+    font-size: 40px;
+    color: #CC9900;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.rightex {
+    color: black;
+    font-size: 16px;
+    width: 320px;
+
+    text-align: center;
+}
+/* input */
+.name {
+    color: #CC9900;
+    font-size: 20px;
+    
+}
+.eparent {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+.nparent {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"] {
+    border: 1px solid #CC9900;
+    height: 30px;
+}
+.inputs {
+    display: flex;
+    flex-direction: row;
+}
+.nparent {
+    display: flex;
+}
+
+.email {
+    font-size: 20px;
+    color: #CC9900;
+    margin-top: 23px;
+}
+.dateparent {
+    display: flex;
+    flex-direction: column;
+}
+.cparent {
+    display: flex;
+    flex-direction: column;
+}
+input[type="email"] {
+    border: 1px solid #CC9900;
+    height: 30px;
+}
+.date {
+    color: #CC9900;
+    font-size: 20px;
+    text-align: start;
+}
+input[type="date"] {
+    border: 1px solid #CC9900;
+    height: 30px;
+    width: 200px;
+}
+.party {
+    color: #CC9900;
+    font-size: 20px;
+    margin-top: 24px;
+}
+.paparent {
+    margin-left: 10px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.ptparent {
+
+}
+input[type="number"] {
+    border: 1px solid #CC9900;
+    height: 30px;
+}
+input[type="reset"] {
+    border: 1px solid #CC9900;
+    background-color: #CC9900;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+/* main dishes */
+.main {
+    color: #CC9900;
+    font-size: 70px;
+}
+.maind {
+}
+.corn {
+    color: #CC9900;
+    font-size: 25px;
+}
+.cm {
+    color: #CC9900;
+    font-size: 25px;
+}
+.cornl {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.cornt {
+}
+/* rost lamb */
+.rostb {
+    border: 1px solid #CC9900;
+    height: 75px;
+    width: 400px;
+}
+.rost {
+    font-size: 25px;
+    color:#CC9900;
+}
+.roste {
+}
+.rostm {
+    font-size: 25px;
+    color: #CC9900;
+}
+.specialr {
+    font-size: 20px;
+    color: white;
+    background-color: #CC9900;
+    text-align: center;
+    width: 100px;
+    margin-left: 301px;
+    opacity: 0.88;
+}
+.rostl {
+    border-bottom: 1px solid #CC9900;
+    width: 350px;
+    margin-left: 20px;
+}
+.se {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+.se>div {
+    margin: 30 0;
+}
+/* fried chichken */
+.fried {
+    color: #CC9900;
+    font-size: 25px;
+}
+.friedm {
+    color: #CC9900;
+    font-size: 25px;
+}
+.friedl {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.friedt {
+}
+/* pastitsio */
+.past {
+    font-size: 25px;
+    color: #CC9900;
+}
+.pastm {
+    font-size: 25px;
+    color: #CC9900;
+}
+.pastl {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.paste {
+}
+/* line */
+.line {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+    margin: 0;
+}
+.linee {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.lini {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.starl {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.starle {
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.sal {
+    /* margin-top: 45px; */
+    border-bottom: 1px solid #CC9900;
+    width: 400px;
+}
+.grekl {
+    border-bottom: 1px solid #CC9900;
+    width: 350px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+/* .mparent {
+    flex-direction: row;
+    display: flex;
+} */
+/* section */
+section>div>div {
+    font-size: 45px;
+    color: orange;
+}
+.opacit {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 500px;  
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+/* divider */
+.divider {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.dividerf {
+    height: 30px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.dish {
+    display: block;
+}
+.menim {
+    
+}
+.cook {
+    margin-top: 25px;
+}
+.star {
+    /* margin-left: 150px; */
+}
+.fines {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 25px;
+    align-self: center;
+    width: 300px;
+}
+.salads {
+}
+/* button */
+.book {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.60;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,1);
+}
+.book:hover,
+.menu:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.menu {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+button>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-size: 19px;
+}
+/* footer */
+footer {
+    background-color: black;
+    min-height: 250px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ab {
+    font-size: 21px;
+}
+.ft {
+    font-size: 15px;
+}
+.hours {
+    font-size: 21px;
+}
+.location {
+    font-size: 21px;
+}
+
+footer>div{
+    width: 350px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+    footer>div{
+        margin: 25px 0;
+    }
+}

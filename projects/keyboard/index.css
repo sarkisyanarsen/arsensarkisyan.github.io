@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.keyboard {
+    background-color: black;
+    width: 82%;
+    min-height: 250px;
+    padding: 10px;
+}
+
+.num-parent, .smiles {
+    display: none;
+    gap: 5px;
+}
+
+.bykva {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.one,
+.two,
+.three,
+.four {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.two {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.smile,
+.number {
+    background-color: #1B1B1B;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.space-parent {
+    width: 535px;
+}
+
+.Enter {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #78787E;
+    width: 80px;
+    height: 40px;
+}
+
+.Enter {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #78787E;
+    width: 80px;
+    height: 40px;
+}
+
+.karyetka {
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 80px;
+    height: 40px;
+}
+
+.number,
+.ctrl {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1B1B1B;
+}
+
+
+/* .numberr {
+    background-color: #78787E;
+    color: white;
+    transform: rotateY(180deg);
+    color: white;
+    display: none;
+    width: 100%;
+    height: 100%;
+  
+} */
+
+.closee {
+    margin-right: 10px;
+}
+
+.fas {
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.q-parent, .number-parent, .shift, .p-parent, .s-parent {
+    width: 90px;
+    height: 40px;
+    /* background-color: transparent; */
+    perspective: 1000px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    gap: 5px;
+}
+
+.shift{
+    width: 90px;
+    height: 40px;
+    text-align: center;
+
+}
+
+.small, .big, .up, .down, .number, .numberr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .small, .number, .up {
+    background-color: #78787E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .big{
+    background-color: #78787E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+
+  .up, .number {
+    background-color: #1B1B1B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .down, .numberr {
+    background-color: #1B1B1B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+
+.back {
+    width: 100px;
+    height: 40px;
+    background-color: #78787E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Enter-parent,
+.Enter {
+    width: 100px;
+    height: 40px;
+}
+
+.close-parent {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.up,
+.down {
+    background-color: #1B1B1B;
+    color: white;
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

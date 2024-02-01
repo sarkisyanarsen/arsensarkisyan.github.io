@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/8628f0fd9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="inp" style="display: flex; width: 100%; justify-content: center; height: 40px; align-items: center;">
+        <i class="far fa-keyboard" style="font-size: 25px; padding-right: 10px;" onclick="keys()"></i>
+        <input type="text" name="" id="inp" style="width: 500px;">
+    </div>
+    <div class="block">
+        <div class="keyboard">
+            <div class="close-parent">
+                <i class="fas fa-window-minimize" onclick="keys()"></i>
+                <div class="closee" onclick="keys()">&#10006;</div>
+            </div>
+            <div class="one">
+                <div class="num-parent" onclick="num()">
+                    <div class="p-parent">
+                        <div class="small all">1</div>
+                        <!-- <div class="big all">1</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">2</div>
+                        <!-- <div class="big all">2</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">3</div>
+                        <!-- <div class="big all">3</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">4</div>
+                        <!-- <div class="big all">4</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">5</div>
+                        <!-- <div class="big all">5</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">6</div>
+                        <!-- <div class="big all">6</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">7</div>
+                        <!-- <div class="big all">7</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">8</div>
+                        <!-- <div class="big all">8</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">9</div>
+                        <!-- <div class="big all">9</div> -->
+                    </div>
+                    <div class="p-parent">
+                        <div class="small all">0</div>
+                        <!-- <div class="big all">0</div> -->
+                    </div>
+
+                </div>
+
+                <div class="smiles" id="smiless">
+                    <div class="s-parent">
+                        <div class="small emodzi">😅</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">🤣</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">😂</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">🥰</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">😘</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">😍</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">😒</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">👌</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">😥</div>
+                    </div>
+                    <div class="s-parent">
+                        <div class="small emodzi">💕</div>
+                    </div>
+                </div>
+
+                <div class="bykva">
+
+                    <div class="q-parent">
+                        <div class="small all">q</div>
+                        <div class="big all">Q</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">w</div>
+                        <div class="big all">W</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">e</div>
+                        <div class="big all">E</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">r</div>
+                        <div class="big all">R</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">t</div>
+                        <div class="big all">T</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">y</div>
+                        <div class="big all">Y</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">u</div>
+                        <div class="big all">U</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">i</div>
+                        <div class="big all">I</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">o</div>
+                        <div class="big all">O</div>
+                    </div>
+                    <div class="q-parent">
+                        <div class="small all">p</div>
+                        <div class="big all">P</div>
+                    </div>
+                    <div class="backspace-parent">
+                        <div class="back" onclick="del()">&larr;</div>
+                        <div class="big">&larr;</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="two">
+                <div class="q-parent">
+                    <div class="small all">a</div>
+                    <div class="big all">A</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">s</div>
+                    <div class="big all">S</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">d</div>
+                    <div class="big all">D</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">f</div>
+                    <div class="big all">F</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">g</div>
+                    <div class="big all">G</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">h</div>
+                    <div class="big all">H</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">j</div>
+                    <div class="big all">J</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">k</div>
+                    <div class="big all">K</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">l</div>
+                    <div class="big all">L</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">'</div>
+                    <div class="big all">"</div>
+                </div>
+                <div class="Enter-parent">
+                    <div class="Enter" id="enter">Enter</div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="shift" onclick="f()">
+                    <div class="up small">&uarr;</div>
+                    <div class="down big">&darr;</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">z</div>
+                    <div class="big all">Z</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">x</div>
+                    <div class="big all">X</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">c</div>
+                    <div class="big all">C</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">v</div>
+                    <div class="big all">V</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">b</div>
+                    <div class="big all">B</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">n</div>
+                    <div class="big all">N</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">m</div>
+                    <div class="big all">M</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">,</div>
+                    <div class="big " id="kar"><</div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">.</div>
+                    <div class="big " id="karr">></div>
+                </div>
+                <div class="q-parent">
+                    <div class="small all">?</div>
+                    <div class="big all">/</div>
+                </div>
+                <div class="shift" onclick="f()">
+                    <div class="up small">&uarr;</div>
+                    <div class="down big">&darr;</div>
+                </div>
+            </div>
+            <div class="four">
+                <div class="number-parent" onclick="num()">
+                    <div class="number">&123</div>
+                    <div class="numberr">ABC</div>
+                </div>
+                <div class="ctrl-parent">
+                    <div class="ctrl">Ctrl</div>
+                </div>
+                <div class="smile-parent" onclick="smile()">
+                    <div class="smile">Smile</div>
+                </div>
+                <div class="space-parent">
+                    <div class="space" style="width: 535px; height: 40px; background-color: #78787E;"></div>
+                </div>
+                <div class="karyetka-parent">
+                    <div class="karyetka" id="karyetka"><</div>
+                </div>
+                <div class="karyetka-parent">
+                    <div class="karyetka" id="karyetkaa">></div>
+                </div>
+                <div class="lang-parent">
+                    <div class="karyetka" onclick="b()">Color</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
