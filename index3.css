@@ -81,14 +81,14 @@ body {
 }
 
 .image-photo {
-    width: 350px;
+    width: 300px;
     height: 400px;
     border-radius: 20px;
     transition: .5s;
 }
 
 .text {
-    width: 40%;
+    width: 45%;
     min-height: 510px;
     border: 1px solid blueviolet;
     border-radius: 20px;
