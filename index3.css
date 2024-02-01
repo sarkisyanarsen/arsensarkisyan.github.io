@@ -68,7 +68,6 @@ body {
     width: 400px;
     height: 450px;
     margin: 10px;
-    padding: 15px;
     display: flex;
     margin-top: 10px;
     justify-content: center;
@@ -361,6 +360,10 @@ body {
 
     .cont {
         justify-content: start;
+    }
+
+    .image-photo {
+        width: 300px;
     }
 
     .burger-menu-parent {
