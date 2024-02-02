@@ -17,7 +17,7 @@
     background-color: rgba(137, 43, 226, 0.37);
     padding: 20px;
     bottom: 1px solid #888;
-    width: 20%;
+    max-width: 50%;
     border-radius: 20px;
     height: 20%;
 }
