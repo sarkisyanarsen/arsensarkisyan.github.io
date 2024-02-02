@@ -380,4 +380,8 @@ body {
         left: 0;
         top: 0;
     }
+
+    .text {
+        width: 60%;
+    }
 }
