@@ -382,6 +382,6 @@ body {
     }
 
     .text {
-        width: 60%;
+        width: 60%!important;
     }
 }
