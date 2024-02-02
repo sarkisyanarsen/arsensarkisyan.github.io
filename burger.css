@@ -48,6 +48,8 @@
     top: -1px;
     left: -10px;
     position: absolute;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     display: grid;
     gap: 12px;
     z-index: 2;
