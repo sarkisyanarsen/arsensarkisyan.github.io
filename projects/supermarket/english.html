@@ -10,222 +10,226 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-        p {
-            margin: 0 !important;
-        }
+    p {
+      margin: 0 !important;
+    }
 
 
 
-        .img {
-            width: 80%;
-            height: 150px;
-            object-fit: contain;
-        }
+    .img {
+      width: 80%;
+      height: 150px;
+      object-fit: contain;
+    }
 
-        .parent {
-            width: 200px;
-            height: 300px;
-            border: 1px solid grey;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
+    .parent {
+      width: 200px;
+      height: 300px;
+      border: 1px solid grey;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
 
-        .center {
-            width: 50px;
-        }
+    .center {
+      width: 50px;
+    }
 
-        .row>i {
-            font-size: 50px;
-        }
+    .row>i {
+      font-size: 50px;
+    }
 
-        .row>p {
-            position: absolute;
-            left: 60px;
-        }
+    .row>p {
+      position: absolute;
+      left: 60px;
+    }
 
-        .logo {
-            width: 100px;
-        }
+    .logo {
+      width: 100px;
+    }
 
-        #select,
-        #select1 {
-            background: rgba(0, 0, 0, 0);
-            border: none;
-            color: white;
-            outline: none;
-        }
+    #select,
+    #select1 {
+      background: rgba(0, 0, 0, 0);
+      border: none;
+      color: white;
+      outline: none;
+    }
 
-        #select>option,
-        #select1>option {
-            background: white;
-            color: black;
-            font-size: 12px;
-        }
+    #select>option,
+    #select1>option {
+      background: white;
+      color: black;
+      font-size: 12px;
+    }
 
-        .head {
-            width: 100%;
-            padding-top: 90px;
-            justify-content: space-evenly;
-            display: flex;
-            align-items: center;
-            height: 120px;
-            gap: 20px;
-        }
+    .head {
+      width: 100%;
+      padding-top: 90px;
+      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      height: 120px;
+      gap: 20px;
+    }
 
-        #reload {
-            color: rgb(36, 187, 36);
-            text-decoration: none;
-            font-size: 25px;
-        }
+    #reload {
+      color: rgb(36, 187, 36);
+      text-decoration: none;
+      font-size: 25px;
+    }
 
-        #search {
-            border: none;
-            border-bottom: 1px solid green;
-            width: 450px;
-            outline: none;
-        }
+    #search {
+      border: none;
+      border-bottom: 1px solid green;
+      width: 450px;
+      outline: none;
+    }
 
-        #search:hover {
-            border-bottom: 2px solid green;
-        }
+    #search:hover {
+      border-bottom: 2px solid green;
+    }
 
-        #search-icon {
-            font-size: 25px;
-            color: green;
-            margin-right: 20px;
-        }
+    #search-icon {
+      font-size: 25px;
+      color: green;
+      margin-right: 20px;
+    }
 
-        .num {
-            margin-left: 50px;
-            width: 200px;
-            text-align: center;
-        }
+    .num {
+      margin-left: 50px;
+      width: 200px;
+      text-align: center;
+    }
 
-        .num-txt {
-            background-color: #F5DB00;
-            border-bottom-right-radius: 50px;
-            border-top-left-radius: 50px;
-            /* width: 230px; */
-            font-size: 14px;
-        }
+    .num-txt {
+      background-color: #F5DB00;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      /* width: 230px; */
+      font-size: 14px;
+    }
 
-        .number {
-            font-size: 25px;
-            color: red;
-        }
+    .number {
+      font-size: 25px;
+      color: red;
+    }
 
-        #inf {
-            font-size: 15px;
-            padding-left: 10px;
-        }
+    #inf {
+      font-size: 15px;
+      padding-left: 10px;
+    }
 
-        .menu-parent {
-            width: 100%;
-            height: 40px;
-            padding-top: 75px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .menu-parent {
+      width: 100%;
+      height: 40px;
+      padding-top: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .menu,
-        .products,
-        .house,
-        .new-year {
-            width: 25%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-            background-color: #E8E9E9;
-            font-size: 18px;
-            font-weight: bold;
-        }
+    .menu,
+    .products,
+    .house,
+    .new-year {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      background-color: #E8E9E9;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-        .menu:hover,
-        .products:hover,
-        .house:hover,
-        .new-year:hover {
-            background-color: #04a351;
-            color: white;
-        }
+    .menu:hover,
+    .products:hover,
+    .house:hover,
+    .new-year:hover {
+      background-color: #04a351;
+      color: white;
+    }
 
-        .carousel-parent {
-            width: 100%;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .carousel-parent {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .carousel {
-            width: 650px !important;
-        }
+    .carousel {
+      width: 650px !important;
+    }
 
-        .image>img {
-            height: 427px;
-            margin-left: 25px;
-        }
+    .image>img {
+      height: 427px;
+      margin-left: 25px;
+    }
 
-        #heart {
-            font-size: 25px;
-            color: white;
-        }
+    #heart {
+      font-size: 25px;
+      color: white;
+    }
 
-        #cart {
-            font-size: 25px;
-        }
+    #cart {
+      font-size: 25px;
+    }
 
-        #totall {
-            position: absolute;
-            width: 30px;
-            top: 0px;
-            left: 61%;
-            border-radius: 10px;
-            background-color: rgb(201, 138, 1);
-            font-size: 13px;
-        }
+    #totall {
+      width: 30px;
+      top: 0px;
+      left: 61%;
+      border-radius: 10px;
+      background-color: rgb(201, 138, 1);
+      font-size: 13px;
+    }
 
-        .heart,
-        .cart-par {
-            width: 35px;
-        }
+    .heart,
+    .cart-par {
+      width: 35px;
+    }
 
-        .heartt,
-        .cartt {
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
-        }
+    .heartt,
+    .cartt {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+    }
 
-        .centerr {
-            width: 100%;
-            height: 40px;
-            gap: 40px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
+    .cartt {
+      width: 60px;
+      display: flex;
+    }
 
-        .logo2 {
-            width: 35px;
-        }
+    .centerr {
+      width: 100%;
+      height: 40px;
+      gap: 40px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
 
-        #russian {
-            width: 20px;
-            margin-left: 5px;
-        }
+    .logo2 {
+      width: 35px;
+    }
 
-        #usa {
-            width: 20px;
-        }
+    #russian {
+      width: 20px;
+    }
 
-        #armenia {
-            width: 20px;
-            margin-left: 5px;
-        }
-    </style>
+    #usa {
+      width: 20px;
+      margin-left: 5px;
+    }
+
+    #armenia {
+      width: 20px;
+      margin-left: 5px;
+    }
+  </style>
 </head>
 
 <body>
