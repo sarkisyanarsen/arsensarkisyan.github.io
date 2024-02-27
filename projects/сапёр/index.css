@@ -1,55 +1,58 @@
+.body {
+  max-width: 100%;
+}
+
 .one {
-    perspective: 1000px;
-    position: relative;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    border: 1px solid grey;
-    background-color: #eee;
+  perspective: 1000px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border: 1px solid grey;
+  background-color: #eee;
 }
 
 .two {
-    width: 100%;
-    background-color: white;
-    height: 100%;
-    position: absolute;
-    background-color: #bbb;
-    color: black;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  position: absolute;
+  background-color: #bbb;
+  color: black;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .divv {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-    height: 100%;
-    position: absolute;
-    background-color: #eee;
-    transform: rotateY(180deg);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  position: absolute;
+  background-color: #eee;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  line-height: 40px;
 }
 
 #parent {
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(10, 40px);
-    grid-template-rows: repeat(10, 40px);
-    overflow: hidden;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  overflow: hidden;
 }
 
 .over {
-    display: none;
-    z-index: 2;
-    width: 385px;
-    height: 400px;
-    color: red;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  display: none;
+  z-index: 2;
+  width: 385px;
+  height: 400px;
+  color: red;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
-
