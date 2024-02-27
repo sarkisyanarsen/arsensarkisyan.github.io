@@ -1,4 +1,4 @@
-const mediaQuery = window.matchMedia('(min-width: 0px)')
+const mediaQuery = window.matchMedia('(min-width: 1000px)')
 
 if (mediaQuery.matches) {
     let arr = []
@@ -105,7 +105,7 @@ if (media.matches) {
     })
 
     let parent = document.getElementById("parent")
-    for (let i = 1; i <= 1; i++) {
+    for (let i = 1; i <= 100; i++) {
 
         // divs
         let one = document.createElement('div')
