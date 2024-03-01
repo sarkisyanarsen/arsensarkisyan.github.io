@@ -1,80 +1,88 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
 #inp {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    height: 55px;
-    align-items: center;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  align-items: center;
 }
-
-
 
 #btn {
-    width: 75px;
-    margin-left: 30px;
-    background-color: greenyellow;
-    border: none;
-    border-radius: 15px;
+  width: 75px;
+  margin-left: 30px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 15px;
 }
 
 #inp1 {
-    border: none;
-    height: 25px;
-    width: 250px;
-    border-bottom: 1px solid greenyellow;
-    outline: none;
+  border: none;
+  height: 25px;
+  width: 250px;
+  border-bottom: 1px solid greenyellow;
+  outline: none;
 }
 
 .cont {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 35%;
+  display: flex;
+  /* justify-content: center; */
 }
 
 .border {
-    width: 400px;
-    padding: 30px;
-    border: 1px solid black;
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid black;
 }
 
 .parent {
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
 }
 
 .radios {
-    width: 350px;
-    display: flex;
-    margin-top: 5px;
-    justify-content: center;
-    border: 1px solid black;
-    gap: 10px;
-    color: greenyellow;
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  border: 1px solid black;
+  gap: 10px;
+  color: greenyellow;
 }
 
 #list {
-    width: 350px;
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid black;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
-
-
 .ff {
-    background-color: rgba(170, 170, 170, 0.658);
+  background-color: rgba(170, 170, 170, 0.658);
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .done {
-    text-decoration: line-through!important;
-    color: black!important;
-    opacity: 0.4!important;
+  text-decoration: line-through !important;
+  color: black !important;
+  opacity: 0.4 !important;
+}
+
+@media screen and (max-width: 450px) {
+  .cont {
+    width: 100%;
+  }
 }
