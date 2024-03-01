@@ -298,4 +298,15 @@ body {
     transform-style: preserve-3d;
     gap: 5px;
   }
+
+  .numberr {
+    margin-left: -30px;
+    width: 30px;
+    font-size: 10px;
+  }
+
+  .down {
+    width: 20px;
+    margin-left: 0px;
+  }
 }
