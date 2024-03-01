@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  gap: 10px;
+  gap: 5px;
 }
 
 .one,
@@ -93,6 +93,10 @@ body {
   color: white;
   width: 80px;
   height: 40px;
+}
+
+#inp {
+  width: 500px;
 }
 
 .number,
@@ -234,4 +238,64 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.space {
+  width: 535px;
+  height: 40px;
+  background-color: #78787e;
+}
+
+@media screen and (max-width: 400px) {
+  #inp {
+    width: 250px;
+  }
+  .keyboard {
+    width: 90%;
+    margin-right: 33px;
+  }
+
+  .back,
+  .Enter,
+  .up,
+  .down {
+    width: 60px;
+  }
+
+  .space {
+    width: 130px;
+  }
+
+  .karyetka,
+  .smile,
+  .ctrl,
+  .number {
+    width: 30px;
+    font-size: 10px;
+  }
+
+  .number-parent {
+    margin-right: 30px;
+  }
+
+  .up {
+    /* display: none; */
+    width: 20px;
+  }
+
+  .q-parent,
+  .number-parent,
+  .shift,
+  .p-parent,
+  .s-parent {
+    width: 30px;
+    height: 40px;
+    /* background-color: transparent; */
+    perspective: 1000px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    gap: 5px;
+  }
 }
